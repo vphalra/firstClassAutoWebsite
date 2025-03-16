@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Class AUTO : Vehic1es</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/264b8ad0f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="promo.css">
+</head>
+<body>
+    <div class="hero">
+
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="vehicle.html">VEHICLES</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div class="container">
+        <div class="product">
+    
+            <img src="images/shoes.png" id="frontImg">
+    
+            <div class="product-inner" id="ProductBox">
+                <div class="product-front">
+                    <div class="product-top">
+                    <h1>Nike</h1>
+                    </div>
+                    <div class="product-bottom">
+                    <p>Mercedes Benz</p>
+                    <h2>S-Class 500</h2>
+                    <h1>130,000 <span>$</span></h1>
+                    <a href="contact.html" class="button">Buy Now</a>
+                    <div class="color-select">
+                        <div class="select-item">
+                            <img src="images/shoes-icon.png">
+                        </div>
+                        <div class="select-item">
+                            <img src="images/shoes-icon2.png" onclick="flipRight()">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-back">
+                    <div class="product-top product-top2">
+                        <h1>Nike</h1>
+                        </div>
+                        <div class="product-bottom">
+                        <p>Mercedes Benz</p>
+                        <h2>S-Class 500</h2>
+                        <h1>130,000 <span>$</span></h1>
+                        <a href="contact.html" class="button">立即购买</a>
+                        <div class="color-select">
+                            <div class="select-item">
+                                <img src="images/shoes-icon.png" onclick="flipLeft()">
+                            </div>
+                            <div class="select-item">
+                                <img src="images/shoes-icon2.png">
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                <div class="left-side"></div>
+                <div class="right-side"></div>
+            </div>
+    
+        </div>
+    </div>
+         <script>
+            var productbox = document.getElementsById("ProductBox");
+            var frontImg = document.getElementById("frontImg");
+            var backImg = document.getElementsById("backImg");
+    
+            function flipRight(){
+                ProductBox.style.transform = "rotateY(180deg)";
+                frontImg.style.left = "650px";
+                backImg.style.left = "20px";
+                frontImg.style.transform = "rotate(-30deg)";
+                backImg.style.transform = "rotate(0deg)";
+            }
+            
+            function flipLeft(){
+                ProductBox.style.transform = "rotateY(0deg)";
+                frontImg.style.left = "20px";
+                backImg.style.left = "-650px";
+                frontImg.style.transform = "rotate(0deg)";
+                backImg.style.transform = "rotate(-30deg)";
+            }
+         </script>
+
+
+    <div class="promocapt">
+        <h1>Year End promotion</h1>
+        <p>Special offer with 10% discount from 31st December 2022 to 1st January 2023
+            come and get it now.
+        </p>
+        <p>any imformation ,please feel free to ask.</p>
+    </div>
+
+    
+    
+    
+    <div class="footer">
+        <div class="col-1">
+            <h3>MORE IMFORMATION</h3>
+            <a href="#">VICHICLE</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+        </div>
+        
+        
+        
+        <div class="col-2">
+            <h3>ASKING FOR MODEL</h3>
+            <form>
+                <input type="heyoung.yr@gmail.com" placeholder="Your Telegram contact" required>
+                <br>
+                <button type="sumbmit">SEND TO SALE</button>
+            </form>
+        </div>
+        <div class="col-3">
+                <h3>CONTACT</h3>
+                <p>123, Monivong BLVD.<br>Phnom Penh, Cambodia</p>
+                <div class="socials">
+                <a href="https://www.facebook.com/deluxeautocambodia">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://t.me/firstclassautokh">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UClxGxfsPhbzeLAMn6RyIdvg">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+
+        </div>
+    </div>
+
+</body>

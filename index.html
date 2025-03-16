@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Class :Vehicles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&family=Monda:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/264b8ad0f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="vehicles.css">
+</head>
+<body onload="showModal()">
+    <div class="hero">
+        <div class="menu-bar">
+            <img src="images/logo2.png" class="logo">
+            <img src="images/menu.png" class="user-pic" onclick="toggleMenu()">
+
+
+        <div class="sub-menu-wrap" id="SubMenu">
+            <div class="sub-menu">
+                <a href="index.html" class="sub-menu-link"><p>HOME EV</p>
+                    <span>></span>
+                </a>
+                <a href="vehicles.html" class="sub-menu-link"><p>GASOLIN CAR</p>
+                    <span>></span>
+                </a>
+                <a href="contact.html" class="sub-menu-link"><p>CONTACT</p>
+                    <span>></span>
+                </a>
+                <a href="about.html" class="sub-menu-link"><p>ABOUT</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+<!-- ------------------Video------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <div class="videoplay">
+        <div class="video">
+         <video autoplay loop muted plays-inline class="back-video">
+            <source src="images/cover.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+
+
+
+
+<!-- ------------------New Car------------------------------------------------------------------------------------------------------------------------- -->
+
+<div class="newarrivals">
+    <h1>TYPE OF ENGINE</h1>
+    <div class="type">
+        <li><a href="index.html">ELECTRIC</a></li>
+        <li><a href="vehicles.html">GASOLIN</a></li>
+    </div>
+</div>
+
+
+
+
+
+<div class="full-gallary">
+    <div class="main_container">
+        <img src="images/img1.jpg" class="image"> <div class="overlay">
+            <h1>2024 AVATR 11 LUXURY VIP</h1>
+                <ul>
+                    <a href="avatr11.html" class="btn"> Customize</a>
+                </ul>
+            </div>
+    </div>
+    <div class="main_container2">
+        <img src="images/img2.jpg" class="image"> <div class="overlay2">
+            <h1>2024 TOYOTA BZ4X MAX</h1>
+            <h2>RANGE:615KM<br>
+                 DAUL MOTOR <br>
+                <br>
+    </h2>
+            </div>
+    </div>
+    <div class="main_container3">
+        <img src="images/img3.jpg" class="image"> <div class="overlay3">
+            <h1>2024 CADILLAC LYRIQ</h1>
+            <h2>RANGE:608KM<br>
+                 AWD 700e<br>
+                 Daul-Motor</h2>
+            </div>
+    </div>
+    <div class="main_container4">
+        <img src="images/img4.jpg" class="image"> <div class="overlay4">
+            <h1>2024 TESLA MODEL Y</h1>
+            <h2>RANGE:608KM
+                <br> AWD 2Oinch | induction turbine wheels
+                <br> Motor: 450 HP | 331KW
+            </h2>
+            </div>
+    </div>
+    </div>
+
+<div class="contacttobuy">
+    <li><a href="contact.html">BUY NOW</a></li>
+</div>
+    
+    
+    
+    
+    
+    
+    
+
+
+<!-- partial:index.partial.html -->
+    <div class="pre-order">
+        <h1>PRE-ORDER</h1>
+        <p>Which brand are you looking for?<br>Tell us model name<br>Which option you like?</p>
+        <div class="type2">
+            <li><a href="contact.html">ORDER NOW</a></li>
+        </div>
+        <ul class="slider">
+            <li class="slide s1"></li>
+            <li class="slide s2"></li>
+            <li class="slide s3"></li>
+            <li class="slide s4"></li>
+            <li class="slide s5"></li>
+        </ul>
+<!-- partial -->
+
+
+
+
+
+
+
+
+<!-- Footer --------------------------------------------------------------------------------------------------------->
+<div class="footer">
+    <div class="row2">
+        <div class="col">
+            <img src="images/logo3.png" class="whitelogo">
+            <p>All products all good quality and we are more responsibale to our good.
+                <br>www.fcautokh.com
+            </p>
+        </div>
+        <div class="col">
+            <h3>SHOWROOM</h3>
+            <p>#420, Preah Monivong Blvd.
+                Sangkat Boeung Keng Kang I
+                Khan Chamkarmorn</p>
+            <p>PHNOM PENH</p>
+            <h4>+855 85 899 599</h4>
+
+            <div class="social-icon">
+                <a href="https://www.facebook.com/firstclassautokh">
+                    <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://t.me/firstclassautokh">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UClxGxfsPhbzeLAMn6RyIdvg">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+<script>
+    let subMenu = document.getElementById("SubMenu");
+    
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
+
+<script>
+    var btn = document.getElementsByClassName("btn");
+    var banner = document.getElementById("banner");
+
+    btn[0].onclick = function(){
+        banner.src = "images/news1.png";
+        animation();
+        this.classList.add("active");
+
+        
+    }
+    btn[1].onclick = function(){
+        banner.src = "images/news2.png";
+        animation();
+        this.classList.add("active");
+    }
+    btn[2].onclick = function(){
+        banner.src = "images/news3.png";
+        animation();
+        this.classList.add("active");
+    }
+
+
+    function animation(){
+        banner.classList.add("zoom");
+        setTimeout(function(){
+            banner.classList.remove("zoom");
+        },500);
+
+        for(b of btn){
+            b.classList.remove("active");
+        }
+    }
+</script>
+
+
+</body>
