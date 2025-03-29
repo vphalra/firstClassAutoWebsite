@@ -154,7 +154,7 @@ function App() {
             </h3>
             <div className="flex gap-3">
               <a
-                href="https://www.facebook.com/firstclassautokh/about"
+                href="https://www.facebook.com/firstclassautokh"
                 className="text-white px-5 py-2 text-sm font-medium rounded-full border border-white/40 bg-white/10 hover:bg-white/20 hover:border-white/60 transition-all duration-300 flex items-center gap-2 backdrop-blur-sm tracking-wide"
                 target="_blank"
                 rel="noopener noreferrer"
