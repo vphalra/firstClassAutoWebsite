@@ -1,3 +1,36 @@
+/* Import Cinzel */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+/* Import Nunito Sans as a fallback for Avenir Next */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap');
+
+/* Import Tailwind styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Set Cinzel as the default font */
+body {
+  font-family: "Cinzel", serif;
+}
+
+/* Apply Nunito Sans to all <p> elements (or Avenir Next if using locally) */
+p {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* Apply Nunito Sans to all buttons (or Avenir Next if using locally) */
+button, a[role="button"], a[href] {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.interactive-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(144, 238, 144, 0.1), transparent);
+    pointer-events: none;
+  }
