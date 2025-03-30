@@ -331,7 +331,7 @@ function App() {
                 onError={() => setImageError(true)}
               />
               <div className="text-neutral-300 leading-relaxed font-normal tracking-wide">
-                <p>First Class Auto is Cambodia’s best dealership. Period.</p>
+                <p>First Class Auto is Cambodia’s #1 dealership. Period.</p>
                 <p>A First Class Team to deliver you First Class Cars & First Class Deals.</p>
                 <p>There's a reason why our clients call us First Class Auto.</p>
               </div>
